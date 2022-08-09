@@ -1,2 +1,2 @@
-Cerveja
-Refrigerante
+Cerveja;
+Refrigerante;
