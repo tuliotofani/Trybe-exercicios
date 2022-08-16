@@ -1,0 +1,12 @@
+h1, p {
+    text-align: center;
+}
+
+li:hover {
+    background-color: blue;
+    list-style: none;
+}
+
+#motivos:active {
+    font-style: italic
+}
