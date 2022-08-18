@@ -1,0 +1,64 @@
+div:nth-child(3):hover {
+    border-color: blue;
+    border-style: solid;
+    margin-right: 85%;  
+  }
+  
+div:nth-child(4):hover {
+    border-color: aquamarine;
+    border-style: solid;
+    margin-right: 85%;
+  }
+  
+div:nth-child(5):hover {
+    border-color: black;
+    border-style: solid;
+    margin-right: 85%;
+  }
+  
+div:nth-child(6):hover {
+    border-color: green;
+    border-style: solid;
+    margin-right: 85%;
+  }
+  
+div:nth-child(7):hover {
+    border-color: pink;
+    border-style: solid;
+    margin-right: 85%;
+  }
+  
+div:nth-child(3) {
+    color: blue;
+    text-decoration: black wavy underline;
+  }
+  
+div:nth-child(4) {
+    color: aquamarine;
+    text-decoration: underline dotted;
+  }
+  
+div:nth-child(5) {
+    color: black;
+    font-size: 30px;
+  }
+  
+div:nth-child(6) {
+    color: green;
+    text-decoration: line-through;
+  }
+  
+div:nth-child(7) {
+    color: pink;
+    text-decoration: underline;
+  }
+
+
+div {
+    border: 3px;
+    width: 50px 30px 50px 30px;
+}
+
+div:nth-child(2n-1) {
+    font-style: italic;
+}
