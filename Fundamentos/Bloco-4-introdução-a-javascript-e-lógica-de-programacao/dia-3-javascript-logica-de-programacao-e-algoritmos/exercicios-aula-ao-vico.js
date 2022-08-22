@@ -22,28 +22,23 @@
 
 
 // Exercicio 3
-let player1 = ['pedra', 'papel', 'tesoura'];
-let player2 = ['pedra', 'papel', 'tesoura'];
-let player1Jogo = Math.floor(Math.random()*3)
-let player2Jogo = Math.floor(Math.random()*3)
+// let player1 = ['pedra', 'papel', 'tesoura'];
+// let player2 = ['pedra', 'papel', 'tesoura'];
+// let player1Jogo = Math.floor(Math.random()*3)
+// let player2Jogo = Math.floor(Math.random()*3)
 
-if (player1[player1Jogo] === player2[player2Jogo]){
-    console.log('A tie!!');
-} else if (player1[player1Jogo] === 'pedra' && player2[player2Jogo] === 'papel'){
-    console.log('Player 2 wins!!');
-} else if (player1[player1Jogo] === 'pedra' && player2[player2Jogo] === 'tesoura'){
-    console.log('Player 1 wins!!');
-} else if (player1[player1Jogo] === 'papel' && player2[player2Jogo] === 'pedra'){
-    console.log('Player 1 wins!!');
-} else if (player1[player1Jogo] === 'papel' && player2[player2Jogo] === 'tesoura'){
-    console.log('Player 2 wins!!');
-} else if (player1[player1Jogo] === 'tesoura' && player2[player2Jogo] === 'pedra'){
-    console.log('Player 2 wins!!');
-} else if (player1[player1Jogo] === 'tesoura' && player2[player2Jogo] === 'papel'){
-    console.log('Player 1 wins!!');
-}
-console.log('Player 1 jogou: ', player1[player1Jogo]);
-console.log('Player 2 jogou: ', player2[player2Jogo]);
+// if (player1[player1Jogo] === player2[player2Jogo]){
+//     console.log('A tie!!');
+// }  else if (player1[player1Jogo] === 'pedra' && player2[player2Jogo] === 'tesoura'){
+//     console.log('Player 1 wins!!');
+// } else if (player1[player1Jogo] === 'papel' && player2[player2Jogo] === 'pedra'){
+//     console.log('Player 1 wins!!');
+// } else if (player1[player1Jogo] === 'tesoura' && player2[player2Jogo] === 'papel'){
+//     console.log('Player 1 wins!!');
+// } else {console.log('Player 2 wins')}
+
+// console.log('Player 1 jogou: ', player1[player1Jogo]);
+// console.log('Player 2 jogou: ', player2[player2Jogo]);
 
 
 
