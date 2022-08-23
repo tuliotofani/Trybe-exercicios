@@ -77,7 +77,7 @@
 //     inputLine = inputLine + symbol;
 // }
 
-// Exercício Bônus 2
+// Exercício Bônus 3
 
 // let n = 5;
 // let symbol = '*';
@@ -97,7 +97,7 @@
 //     counter -= 1;
 // }
 
-// Exercício Bônus 2
+// Exercício Bônus 4
 
 // let n = 11;
 // let symbol = '*';
@@ -121,22 +121,37 @@
 //     controlLeft -= 1;    
 // }
 
-let n = 7;
-let symbol = '*';
-let midOfMatrix = (n + 1) / 2;
-let controlLeft = midOfMatrix;
-let controlRigth = midOfMatrix;
+// Exercício Bônus 5
 
-for (let indexLine = 1; indexLine <= midOfMatrix; indexLine += 1){ 
-    let inputLine = '';   
-    for (let indexColumn = 1; indexColumn <= n; indexColumn += 1){
-        if (indexColumn == controlLeft || indexColumn == controlRigth || indexLine == midOfMatrix){
-            inputLine = inputLine + symbol;
-        } else {
-            inputLine = inputLine + ' ';
-        }
-    }    
-    controlLeft -= 1;
-    controlRigth += 1;
-    console.log(inputLine);
-}
+// let n = 7;
+// let symbol = '*';
+// let midOfMatrix = (n + 1) / 2;
+// let controlLeft = midOfMatrix;
+// let controlRigth = midOfMatrix;
+
+// for (let indexLine = 1; indexLine <= midOfMatrix; indexLine += 1){ 
+//     let inputLine = '';   
+//     for (let indexColumn = 1; indexColumn <= n; indexColumn += 1){
+//         if (indexColumn == controlLeft || indexColumn == controlRigth || indexLine == midOfMatrix){
+//             inputLine = inputLine + symbol;
+//         } else {
+//             inputLine = inputLine + ' ';
+//         }
+//     }    
+//     controlLeft -= 1;
+//     controlRigth += 1;
+//     console.log(inputLine);
+// }
+
+// Exercício 6
+// let number = 101;
+// let divisor = 0;
+
+// for (let index = 1; index <= number; index += 1){
+//     if (number % index === 0){
+//         divisor += 1;        
+//     }
+// }
+// if (divisor === 2){
+//     console.log(number, 'é primo');
+// } else {console.log(number, 'não é primo')}
