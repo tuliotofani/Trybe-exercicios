@@ -52,3 +52,91 @@
 // }    
 
 // console.log(primos);
+
+// Exercício Bônus 1
+
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
+
+// for (let index = 0; index < n; index += 1){
+//     inputLine = inputLine + symbol;
+// }
+// for (let index = 0; index < n; index += 1){
+//     console.log(inputLine);
+// }
+
+// Exercício Bônus 2
+
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
+
+// for (let index = 0; index <= n; index += 1){
+//     console.log(inputLine);
+//     inputLine = inputLine + symbol;
+// }
+
+// Exercício Bônus 2
+
+// let n = 5;
+// let symbol = '*';
+// let inputLine = '';
+// let counter = n - 1;
+
+// for (let index = 0; index < n; index += 1){
+//     for (let index2 = 0; index2 < n; index2 += 1){
+//         if (index2 < counter){
+//             inputLine = inputLine + ' ';
+//         } else {
+//             inputLine = inputLine + symbol;
+//         }
+//     }
+//     console.log(inputLine);
+//     inputLine = '';
+//     counter -= 1;
+// }
+
+// Exercício Bônus 2
+
+// let n = 11;
+// let symbol = '*';
+// let inputLine = '';
+
+// let midOfMatrix = (n + 1) / 2;
+// let controlLeft = midOfMatrix;
+// let controlRigth = midOfMatrix;
+
+// for (let index = 0; index <= midOfMatrix; index += 1){
+//     for (let indexColumn = 0; indexColumn <= n; indexColumn += 1){
+//         if (indexColumn > controlLeft && indexColumn < controlRigth){
+//             inputLine = inputLine + symbol;
+//         } else {
+//             inputLine = inputLine + ' ';
+//         }
+//     }
+//     console.log(inputLine);
+//     inputLine = '';
+//     controlRigth += 1;
+//     controlLeft -= 1;    
+// }
+
+let n = 7;
+let symbol = '*';
+let midOfMatrix = (n + 1) / 2;
+let controlLeft = midOfMatrix;
+let controlRigth = midOfMatrix;
+
+for (let indexLine = 1; indexLine <= midOfMatrix; indexLine += 1){ 
+    let inputLine = '';   
+    for (let indexColumn = 1; indexColumn <= n; indexColumn += 1){
+        if (indexColumn == controlLeft || indexColumn == controlRigth || indexLine == midOfMatrix){
+            inputLine = inputLine + symbol;
+        } else {
+            inputLine = inputLine + ' ';
+        }
+    }    
+    controlLeft -= 1;
+    controlRigth += 1;
+    console.log(inputLine);
+}
