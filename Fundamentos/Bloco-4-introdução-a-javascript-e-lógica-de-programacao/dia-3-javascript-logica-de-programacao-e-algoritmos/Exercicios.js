@@ -21,12 +21,12 @@
 // let biggestWord = arr[0];
 // let smallestWord = arr[0];
 
-// for (let index = 0; index < arr.length; index += 1){
+// for (let index = 1; index < arr.length; index += 1){
 //     if (arr[index].length > biggestWord.length){
 //         biggestWord = arr[index];
 //     }
 // }
-// for (let index = 0; index < arr.length; index += 1){
+// for (let index = 1; index < arr.length; index += 1){
 //     if (arr[index].length < biggestWord.length){
 //         smallestWord = arr[index];
 //     }
@@ -39,7 +39,7 @@
 // let numeros = [];
 // let primos = 0;
 
-// for (let number = 2; number <= 50; number += 1){
+// for (let number = 2; number <= 150; number += 1){
 //     numeros.push(number);
 //     let isPrime = true;
 //    for (let divisor = 2; divisor < number; divisor += 1){
@@ -97,6 +97,8 @@
 //     counter -= 1;
 // }
 
+
+
 // Exercício Bônus 4
 
 // let n = 11;
@@ -121,18 +123,20 @@
 //     controlLeft -= 1;    
 // }
 
+
 // Exercício Bônus 5
 
-// let n = 7;
+// let n = 15;
 // let symbol = '*';
-// let midOfMatrix = (n + 1) / 2;
-// let controlLeft = midOfMatrix;
-// let controlRigth = midOfMatrix;
+// let mid = (n + 1) / 2;
+// let controlLeft = mid;
+// let controlRigth = mid;
 
-// for (let indexLine = 1; indexLine <= midOfMatrix; indexLine += 1){ 
-//     let inputLine = '';   
+
+// for (let indexLine = 1; indexLine <= mid; indexLine += 1){  
+//     let inputLine = '';      
 //     for (let indexColumn = 1; indexColumn <= n; indexColumn += 1){
-//         if (indexColumn == controlLeft || indexColumn == controlRigth || indexLine == midOfMatrix){
+//         if (indexColumn == controlLeft || indexColumn == controlRigth || indexLine == mid){
 //             inputLine = inputLine + symbol;
 //         } else {
 //             inputLine = inputLine + ' ';
@@ -142,6 +146,7 @@
 //     controlRigth += 1;
 //     console.log(inputLine);
 // }
+
 
 // Exercício 6
 // let number = 101;
