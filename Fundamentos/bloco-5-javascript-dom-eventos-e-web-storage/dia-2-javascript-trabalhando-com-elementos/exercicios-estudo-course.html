@@ -20,18 +20,40 @@
         </section>
     </main>
     <script>
-        const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
-        const pai = ondeVoceEsta.parentElement;
-        pai.style.color = 'red';
-        const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
-        primeiroFilhoDoFilho.innerHTML = 'testes';
-        const primeiroFilho = pai.firstChild;
-        const primeiroFilho2 = ondeVoceEsta.previousElementSibling;
-        const atencao = ondeVoceEsta.nextSibling;
-        const terceiroFilho = ondeVoceEsta.nextElementSibling;
-        const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+        // const ondeVoceEsta = document.getElementById('elementoOndeVoceEsta');
+        // const pai = ondeVoceEsta.parentElement;
+        // pai.style.color = 'red';
+        // const primeiroFilhoDoFilho = document.getElementById('primeiroFilhoDoFilho');
+        // primeiroFilhoDoFilho.innerHTML = 'testes';
+        // const primeiroFilho = pai.firstChild;
+        // const primeiroFilho2 = ondeVoceEsta.previousElementSibling;
+        // const atencao = ondeVoceEsta.nextSibling;
+        // const terceiroFilho = ondeVoceEsta.nextElementSibling;
+        // const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
+        // const siblingOndeVoceEsta = document.createElement('section');
+        // siblingOndeVoceEsta.id = 'irmaoElementoOndeVoceEsta';
+        // pai.appendChild(siblingOndeVoceEsta);
+        // const filhoElementoOndeVoceEsta = document.createElement('section');
+        // filhoElementoOndeVoceEsta.id = 'filhoElementeOndeVoceEsta';
+        // ondeVoceEsta.appendChild(filhoElementoOndeVoceEsta);
+        // const filhoPrimeiroFilhodoFilho = document.createElement('section');
+        // filhoPrimeiroFilhodoFilho.id = 'filhoPrimeiroFilhodoFilho';
+        // primeiroFilhoDoFilho.appendChild(filhoPrimeiroFilhodoFilho);
+        // const caminho = filhoPrimeiroFilhodoFilho.parentElement;
+        // const caminho2 = caminho.parentElement;
+        // const caminho3 = caminho2.nextElementSibling;
+        const pai = document.getElementById('pai');
 
-        console.log(terceiroFilho2);
+        for (let index = pai.childNodes.length - 1; index >= 0; index -= 1) {
+            const currenteChildren = pai.childNodes[index];
+            if (currenteChildren.id !== 'elementoOndeVoceEsta') {
+                currenteChildren.remove();
+            }
+        }
+        const segundoEUltimoFilhoDoFilho = document.getElementById('segundoEUltimoFilhoDoFilho');
+        segundoEUltimoFilhoDoFilho.remove();
+
+        console.log(pai);
     </script>
 </body>
 </html>
