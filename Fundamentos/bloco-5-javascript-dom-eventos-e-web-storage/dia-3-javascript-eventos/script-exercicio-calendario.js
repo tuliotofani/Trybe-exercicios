@@ -136,7 +136,7 @@ function changeColorTask(color) {
 
 changeColorTask('red');
 
-function sectingTask() {
+function selectingTask() {
     let selectedTask = document.getElementsByClassName('task selected');
     let myTask = document.querySelector('.task');
     myTask.addEventListener('click', function(event) {
@@ -148,4 +148,22 @@ function sectingTask() {
     });
 }
 
-sectingTask();
+selectingTask();
+
+function setDayColor() {
+    let selectedTaks = document.getElementsByClassName('task selected');
+    let taskDiv = document.querySelector('.task');
+    let days =  document.querySelector('#days');
+    let taskColor = taskDiv.style.backgroundColor;
+    days.addEventListener('click', function(event){
+        let eventTargetColor = event.target.style.color;
+        if (selectedTaks.length > 0 && eventTargetColor !== taskColor) {
+            let color = selectedTaks[0].style.backgroundColor;
+            event.target.style.color = color;
+        } else if (eventTargetColor === taskColor) {
+            event.target.style.color = 'rgb(119,119,119)';
+        }
+    });
+}
+
+setDayColor();
