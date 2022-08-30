@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        const elementH1 = document.createElement('h1');
+        elementH1.innerText = 'Exercício 5.2 - JavaScript DOM ';
+        elementH1.className = 'title';
+        document.body.appendChild(elementH1);
+
+        const mainContent = document.createElement('main');
+        mainContent.className = 'main-content';
+        document.body.appendChild(mainContent);
+
+        const mainSection = document.createElement('section');
+        mainSection.className = 'center-content';
+        mainContent.appendChild(mainSection);
+
+        const paragraphCenterCotent = document.createElement('p');
+        paragraphCenterCotent.id = 'paragraphCenterCotent';
+        paragraphCenterCotent.innerText = 'Testo para testar e concluir o exercício!'
+        mainSection.appendChild(paragraphCenterCotent);
+
+        const leftContent = document.createElement('section');
+        leftContent.className = 'left-content';
+        mainContent.appendChild(leftContent);
+
+        const rigthContent = document.createElement('section');
+        rigthContent.className = 'rigth-content';
+        mainContent.appendChild(rigthContent);
+
+        const imagemLeftContent = document.createElement('img');
+        imagemLeftContent.className = 'small-image';
+        imagemLeftContent.src = 'https://picsum.photos/200';
+        leftContent.appendChild(imagemLeftContent);
+
+        const orderedList = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+        const listOrdered = document.createElement('ul');
+        rigthContent.appendChild(listOrdered);
+        for (let index = 0; index < orderedList.length; index += 1) {
+            const elementOrederedList = document.createElement('li');
+            elementOrederedList.innerHTML = orderedList[index];
+            listOrdered.appendChild(elementOrederedList);
+        }
+
+        for (let index = 1; index <= 3; index += 1) {
+            const tituloH3 = document.createElement('h3');
+            // tituloH3.className = 'description';
+            // tituloH3.innerHTML = 'show' + index
+            mainContent.appendChild(tituloH3);
+        }
+
+        const elementsH3 = document.getElementsByTagName('h3');
+        for (let index = 0; index < elementsH3.length; index += 1) {
+            elementsH3[index].className = 'description';
+        }
+
+        const leftContentZero = document.getElementsByClassName('left-content')[0];
+        mainContent.removeChild(leftContentZero);
+
+        const rigthContentZero = document.getElementsByClassName('rigth-content')[0];
+        rigthContentZero.style.marginRight = 'auto';
+
+        
+        mainContent.parentNode.style.backgroundColor = 'green';
+
+        const ul = document.getElementsByTagName('ul')[0];
+        ul.lastChild.remove();
+        ul.lastChild.remove();
+        // listOrdered.lastElementChild.remove();
+        // listOrdered.lastElementChild.remove();
+    </script>
+  </body>
+</html>
