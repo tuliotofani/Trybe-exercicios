@@ -47,15 +47,15 @@ function addClassFriday() {
 
 addClassFriday();
 
-const buttonHoliday = document.querySelector('.buttons-container');
-function Feriados(newButton) {
+const buttonContainer = document.querySelector('.buttons-container');
+function feriados(newButton) {
     const button = document.createElement('button');
     button.setAttribute('id', 'btn-holiday');
     button.innerHTML = newButton
-    buttonHoliday.appendChild(button);
+    buttonContainer.appendChild(button);
 }
 
-Feriados('Feriados');
+feriados('Feriados');
 
 function changeBackGroundColorHoliday() {
     let holiday = document.getElementsByClassName('holiday');
@@ -71,12 +71,12 @@ function changeBackGroundColorHoliday() {
 const button = document.getElementById('btn-holiday');
 button.addEventListener('click', changeBackGroundColorHoliday);
 
-// function changeBackGroundColorHoliday2() {
-//     let holiday = document.getElementsByClassName('holiday');
-//     for (let index = 0; index < holiday.length; index += 1){
-//         holiday[index].style.backgroundColor = 'rgb(238,238,238)';
-//     }    
-// }
+// const buttonFriday = document.querySelector('.buttons-container');
+function fridays(newButton2) {
+    const button = document.createElement('button');
+    button.setAttribute('id', 'btn-friday');
+    button.innerHTML = newButton2
+    buttonContainer.appendChild(button);
+}
 
-// const button2 = document.getElementById('btn-holiday');
-// button2.addEventListener('click', changeBackGroundColorHoliday2);
+fridays('Sexta-feira');
