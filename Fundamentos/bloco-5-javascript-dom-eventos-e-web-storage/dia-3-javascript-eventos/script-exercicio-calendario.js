@@ -60,10 +60,10 @@ feriados('Feriados');
 function changeBackGroundColorHoliday() {
     let holiday = document.getElementsByClassName('holiday');
     for (let index = 0; index < holiday.length; index += 1){
-        if (holiday[index].style.backgroundColor = 'rgb(238,238,238)') {
-            holiday[index].style.backgroundColor = 'blue';
+        if (holiday[index].style.backgroundColor === 'blue') {
+            holiday[index].style.backgroundColor = 'rgb(238,238,238)';
         } else {
-            holiday[index].style.backgroundColor = 'rgb(238,238,238)'
+            holiday[index].style.backgroundColor = 'blue'
         }
     }    
 }
@@ -74,9 +74,29 @@ button.addEventListener('click', changeBackGroundColorHoliday);
 // const buttonFriday = document.querySelector('.buttons-container');
 function fridays(newButton2) {
     const button = document.createElement('button');
-    button.setAttribute('id', 'btn-friday');
+    button.id = 'btn-friday';
     button.innerHTML = newButton2
     buttonContainer.appendChild(button);
 }
 
 fridays('Sexta-feira');
+
+function changeFridayText(fridayArray) {
+    const buttonFriday = document.querySelector('#btn-friday');
+    const fridayDays = document.getElementsByClassName('friday');
+    const newFridaytext = 'SEXTOU!!';
+    // console.log(fridayDays);
+
+    buttonFriday.addEventListener('click', function() {
+        for (let index = 0; index < fridayDays.length; index += 1) {
+            if (fridayDays[index].innerHTML !== newFridaytext) {
+                fridayDays[index].innerHTML = newFridaytext;
+            } else {
+                fridayDays[index].innerHTML = fridayArray[index];
+            }
+        }
+    });
+
+}
+let fridayArray = [4, 11, 18, 25, 1]
+changeFridayText(fridayArray);
