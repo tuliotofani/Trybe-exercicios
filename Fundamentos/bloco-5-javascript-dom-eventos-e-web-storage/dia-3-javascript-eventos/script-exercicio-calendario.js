@@ -24,7 +24,25 @@ function cretateDaysCalendar () {
         dayList.setAttribute('class', 'day')
         dayList.innerText = decemberDaysList[index];
         days.appendChild(dayList);
-        console.log(dayList);
     }
 }
+
 cretateDaysCalendar();
+
+function addClassholiday(n) {
+    let holiday = document.querySelector('#days').children[n + 1];
+    holiday.classList.add('holiday');
+}
+
+addClassholiday(24);
+addClassholiday(25);
+addClassholiday(31);
+
+function addClassFriday() {
+    for (let index = 5; index < decemberDaysList.length; index += 7) {
+        let friday = document.querySelector('#days').children[index];
+        friday.classList.add('friday');
+    }
+}
+
+addClassFriday();
