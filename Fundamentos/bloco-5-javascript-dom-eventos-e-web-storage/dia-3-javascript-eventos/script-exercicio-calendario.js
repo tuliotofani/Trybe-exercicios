@@ -60,10 +60,23 @@ Feriados('Feriados');
 function changeBackGroundColorHoliday() {
     let holiday = document.getElementsByClassName('holiday');
     for (let index = 0; index < holiday.length; index += 1){
-        holiday[index].style.backgroundColor = 'blue';
-    }
-    
+        if (holiday[index].style.backgroundColor = 'rgb(238,238,238)') {
+            holiday[index].style.backgroundColor = 'blue';
+        } else {
+            holiday[index].style.backgroundColor = 'rgb(238,238,238)'
+        }
+    }    
 }
 
 const button = document.getElementById('btn-holiday');
 button.addEventListener('click', changeBackGroundColorHoliday);
+
+// function changeBackGroundColorHoliday2() {
+//     let holiday = document.getElementsByClassName('holiday');
+//     for (let index = 0; index < holiday.length; index += 1){
+//         holiday[index].style.backgroundColor = 'rgb(238,238,238)';
+//     }    
+// }
+
+// const button2 = document.getElementById('btn-holiday');
+// button2.addEventListener('click', changeBackGroundColorHoliday2);
