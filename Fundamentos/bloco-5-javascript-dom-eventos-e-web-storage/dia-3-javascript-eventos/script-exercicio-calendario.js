@@ -114,21 +114,16 @@ function dayMouseOut() {
     event.target.style.fontSize = '20px';
     });
 }
-// zoomIn();
-// zoomOut();
 
-// function dayMouseOver() {
-//     let days = document.querySelector('#days');
-//     days.addEventListener('mouseover', function(event) {
-//       event.target.style.fontSize = '30px';
-//     });
-//   }
-  
-//   function dayMouseOut() {
-//     let days = document.querySelector('#days');
-//     days.addEventListener('mouseout', function(event) {
-//       event.target.style.fontSize = '20px';
-//     });
-//   }
 dayMouseOver();
 dayMouseOut();
+
+
+function addTaks(task) {
+    const taskContainer = document.querySelector('.my-tasks');
+    const addTask = document.createElement('span');
+    addTask.innerHTML = task;
+    taskContainer.appendChild(addTask);
+}
+
+addTaks('treinar');
