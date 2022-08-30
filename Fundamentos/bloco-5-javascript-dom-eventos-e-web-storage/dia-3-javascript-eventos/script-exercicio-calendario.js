@@ -46,3 +46,24 @@ function addClassFriday() {
 }
 
 addClassFriday();
+
+const buttonHoliday = document.querySelector('.buttons-container');
+function Feriados(newButton) {
+    const button = document.createElement('button');
+    button.setAttribute('id', 'btn-holiday');
+    button.innerHTML = newButton
+    buttonHoliday.appendChild(button);
+}
+
+Feriados('Feriados');
+
+function changeBackGroundColorHoliday() {
+    let holiday = document.getElementsByClassName('holiday');
+    for (let index = 0; index < holiday.length; index += 1){
+        holiday[index].style.backgroundColor = 'blue';
+    }
+    
+}
+
+const button = document.getElementById('btn-holiday');
+button.addEventListener('click', changeBackGroundColorHoliday);
