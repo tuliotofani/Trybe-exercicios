@@ -118,12 +118,21 @@ function dayMouseOut() {
 dayMouseOver();
 dayMouseOut();
 
-
-function addTaks(task) {
-    const taskContainer = document.querySelector('.my-tasks');
+const taskContainer = document.querySelector('.my-tasks');
+function addTaks(task) {    
     const addTask = document.createElement('span');
     addTask.innerHTML = task;
     taskContainer.appendChild(addTask);
 }
 
 addTaks('treinar');
+
+function changeColorTask(color) {
+    const newDiv = document.createElement('div');
+    newDiv.setAttribute('class', 'task');
+    newDiv.style.backgroundColor = color;
+    taskContainer.appendChild(newDiv);
+}
+
+changeColorTask('red');
+
