@@ -100,3 +100,35 @@ function changeFridayText(fridayArray) {
 }
 let fridayArray = [4, 11, 18, 25, 1]
 changeFridayText(fridayArray);
+
+function dayMouseOver() {
+    let days = document.querySelector('#days');
+    days.addEventListener('mouseover', function(event) {
+        event.target.style.fontSize = '30px';
+    });
+}
+
+function dayMouseOut() {
+   let days = document.querySelector('#days');
+   days.addEventListener('mouseout', function(event) {
+    event.target.style.fontSize = '20px';
+    });
+}
+// zoomIn();
+// zoomOut();
+
+// function dayMouseOver() {
+//     let days = document.querySelector('#days');
+//     days.addEventListener('mouseover', function(event) {
+//       event.target.style.fontSize = '30px';
+//     });
+//   }
+  
+//   function dayMouseOut() {
+//     let days = document.querySelector('#days');
+//     days.addEventListener('mouseout', function(event) {
+//       event.target.style.fontSize = '20px';
+//     });
+//   }
+dayMouseOver();
+dayMouseOut();
