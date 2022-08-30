@@ -136,3 +136,16 @@ function changeColorTask(color) {
 
 changeColorTask('red');
 
+function sectingTask() {
+    let selectedTask = document.getElementsByClassName('task selected');
+    let myTask = document.querySelector('.task');
+    myTask.addEventListener('click', function(event) {
+        if (selectedTask.length === 0) {
+            event.target.classList.add('selected');
+        } else {
+            event.target.setAttribute('class', 'task');
+        }
+    });
+}
+
+sectingTask();
