@@ -1,0 +1,32 @@
+#body {
+    background-color: white;
+    color: Black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.25;
+}
+
+button {
+    display: block;
+    width: 70px;
+}
+
+/* #preferences-conteiner {
+
+} */
+
+.preferences-list {
+    display: inline-block;
+    text-align: center;
+    width: 150px;
+    height: 190px;
+    border: 1px solid black;
+}
+
+#book-conteiner {
+    width: 70%;
+    margin-top: 60px;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    padding: 20px;
+}

@@ -1,26 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Exemplo WebStorage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Course</title>
+    <link rel="stylesheet" href="style-exercicio-course.css">
 </head>
-<body>
-  <header>
-    <h1>Diferenças de armazenamento entre LocalStorage e WebStorage</h1>
-  </header>
-  <main>
-    <section>
-      <h2>Frases armazenadas</h2>
-      <input type="text" id="phrases-input" />
-      <button id="add-button">Adicionar frase</button>
-      <div>
-        <ul id="phrases-list">
-        </ul>
-      </div>
-    </section>
-  </main>
-  <script src="scrip-exercicio-course.js"></script>
+<body id="body">
+    <header id="header">
+        <h1 id="name-page">Lorem Ipsum!</h1>
+    </header>
+    <main id="main">
+        <section id="preferences-conteiner">
+            <h2 id="preferences-tilte">Preferences</h2>
+            <div id="backgroundcolor-conteiner" class="preferences-list">
+                <h3 id="backgroundcolor" class="title">Back ground color</h3>
+                <ul id="bgc">
+                   <button>Black</button>
+                   <button>White</button>
+                   <button>Grey</button>
+                   <button>Purple</button>
+                </ul>
+            </div>
+            <div id="textcolor-conteiner" class="preferences-list">
+                <h3 id="text-color" class="title">Text color</h3>
+                <ul id="tcolor">
+                   <button>black</button>
+                   <button>White</button>
+                   <button>Grey</button>
+                   <button>Purple</button>
+                </ul>
+            </div>
+            <div id="fontsize-conteiner" class="preferences-list">
+                <h3 id="font-size" class="title">Font Size</h3>
+                <ul id="size-font">
+                    <button>10px</button>
+                    <button>15px</button>
+                    <button>20px</button>
+                    <button>25px</button>
+                </ul>
+            </div>
+            <div id="linespace-conteiner" class="preferences-list">
+                <h3 id="line-space" class="title">Line space</h3>
+                <ul id="line-height">
+                    <button>1</button>
+                    <button>1.25</button>
+                    <button>1.5</button>
+                    <button>2</button>
+                </ul>
+            </div>
+            <div id="fontfamily-conteiner" class="preferences-list">
+                <h3 id="fontfamily-space" class="title">Font Family</h3>
+                <ul id="font">
+                    <button>Arial</button>
+                    <button>Times New Roman</button>
+                </ul>
+            </div>
+        </section>
+        <section id="book-conteiner">
+            <section id="title-conteiner">
+                <h2 id="book-title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</h2>
+            </section>
+            <section id="book">
+                <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et dapibus leo. Duis pulvinar vestibulum dolor eget sollicitudin. Vivamus vitae velit vitae ligula consequat finibus. Maecenas pulvinar neque sit amet libero tempus faucibus. Suspendisse at neque in purus porta posuere. Morbi leo nisi, sollicitudin sed dignissim a, pellentesque eu nisl. Aliquam ornare felis lorem, at laoreet mauris vehicula ut. Integer sit amet elit ut arcu lobortis efficitur. Vivamus suscipit mi vitae libero fermentum luctus.</p>
+                <p id="paragraph">Sed orci magna, tristique in ipsum vel, iaculis fringilla erat. Quisque commodo porttitor tellus. Maecenas velit purus, auctor sit amet pulvinar eu, lobortis eget sem. Maecenas ut quam luctus neque sagittis ultrices. Nunc a luctus lectus. Duis commodo suscipit risus, eu gravida diam mollis ac. Morbi sodales felis diam. Nullam dignissim vestibulum interdum.</p>
+                <p id="paragraph">Nullam ut ante nec tellus bibendum gravida lacinia eget dui. Aliquam in tristique ex. Morbi sit amet mollis dolor. Curabitur ultricies sodales tincidunt. Curabitur id sapien lorem. In nulla ex, efficitur quis ex ut, laoreet tristique felis. Curabitur mollis fermentum mollis. Praesent maximus cursus est ut elementum. Maecenas vulputate ipsum id risus molestie luctus. Etiam commodo commodo augue, id laoreet eros tempor vitae. Nam sem elit, mollis sed nisl et, aliquet ultricies nisl.</p>
+                <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum tempor libero, eu varius libero pharetra in. Nulla ut condimentum magna. Nullam a tempor lectus. Curabitur cursus, tellus ac porta aliquam, nisi orci ornare eros, hendrerit sagittis nibh urna a urna. In hac habitasse platea dictumst. Cras pretium congue justo sed sagittis. Fusce mattis, lorem vitae auctor pharetra, sem felis finibus justo, posuere malesuada orci velit sit amet metus. Integer ante tellus, finibus non ornare ut, egestas aliquet sapien. Mauris dignissim auctor elit vitae facilisis. Cras quis tincidunt sem. Nulla gravida varius fringilla. Sed tempus lectus arcu, nec cursus nunc accumsan congue. Donec enim dui, tempus a feugiat sit amet, vulputate venenatis velit. Phasellus porttitor id elit non imperdiet. Vestibulum venenatis condimentum mi, non vulputate nulla posuere nec.</p>
+                <p id="paragraph">Praesent imperdiet ex est, vitae faucibus nisl tincidunt id. Morbi quis nisl est. Ut luctus consectetur mi, quis lacinia sapien posuere sed. Fusce porta viverra odio, ac semper lectus aliquam scelerisque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec facilisis lacus molestie velit euismod, laoreet sodales mi laoreet. Sed turpis magna, pulvinar semper facilisis quis, accumsan nec orci. Duis hendrerit velit ac aliquam viverra. Curabitur tellus.</p>
+                <p id="paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor nulla numquam neque dolore sit recusandae natus minima eveniet a hic accusamus sequi fuga, fugiat harum, quaerat eum debitis. Magni, nobis.</p>
+                <p id="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi sequi nisi corporis corrupti, minus repudiandae nobis nostrum dicta, sed mollitia cumque sit voluptas temporibus! Consequatur natus asperiores eveniet sit alias.</p>
+                <p id="paragraph">Sed orci magna, tristique in ipsum vel, iaculis fringilla erat. Quisque commodo porttitor tellus. Maecenas velit purus, auctor sit amet pulvinar eu, lobortis eget sem. Maecenas ut quam luctus neque sagittis ultrices. Nunc a luctus lectus. Duis commodo suscipit risus, eu gravida diam mollis ac. Morbi sodales felis diam. Nullam dignissim vestibulum interdum.</p>
+                <p id="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum tempor libero, eu varius libero pharetra in. Nulla ut condimentum magna. Nullam a tempor lectus. Curabitur cursus, tellus ac porta aliquam, nisi orci ornare eros, hendrerit sagittis nibh urna a urna. In hac habitasse platea dictumst. Cras pretium congue justo sed sagittis. Fusce mattis, lorem vitae auctor pharetra, sem felis finibus justo, posuere malesuada orci velit sit amet metus. Integer ante tellus, finibus non ornare ut, egestas aliquet sapien. Mauris dignissim auctor elit vitae facilisis. Cras quis tincidunt sem. Nulla gravida varius fringilla. Sed tempus lectus arcu, nec cursus nunc accumsan congue. Donec enim dui, tempus a feugiat sit amet, vulputate venenatis velit. Phasellus porttitor id elit non imperdiet. Vestibulum venenatis condimentum mi, non vulputate nulla posuere nec.</p>
+            </section>
+        </section>
+    </main>
+    <script src="script-exercicio-course.js"></script>
 </body>
 </html>
