@@ -1,0 +1,54 @@
+#field-set {
+    width: 70%;
+    margin: auto;
+}
+
+#form-container {
+    width: 68%;
+    margin: auto;
+}
+
+header {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+.inputs {
+    margin: 10px;
+}
+
+#name {
+    padding: 3px;
+    margin-left: 4px;
+    width: 300px;
+        
+}
+
+#email {
+    padding: 3px;
+    font-size: 15px;
+}
+
+#data {
+    padding: 3px;
+}
+
+#paragraph {
+    margin-bottom: 5px;
+}
+
+#seu-texto {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+#submit {
+    padding: 10px;
+}
+
+#limpar {
+    padding: 10px;
+    margin-left: 10px;
+}

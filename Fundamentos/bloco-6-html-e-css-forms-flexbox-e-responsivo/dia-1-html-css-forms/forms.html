@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style-forms.css">
+</head>
+<body>
+    <header>
+        <h1>Participe do concurso</h1>
+    </header>
+
+    <form action="" method="get" id="form-container">
+        <fieldset id="field-set">
+            <div class="inputs">
+                <label for="name">Nome completo:</label>
+                <input type="text" id="name" name="name" required maxlength="40" minlength="10">
+            </div>
+            <div class="inputs">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="inputs">
+                <p id="paragraph">Destino preferido:</p>
+                <input type="radio" id="destino1" name="destino">
+                <label for="destino1">Cidade</label>
+                <input type="radio" id="destino2" name="destino">
+                <label for="destino2">Campo</label>
+                <input type="radio" id="destino3" name="destino">
+                <label for="destino3">Praia</label>
+                <input type="radio" id="destino4" name="destino">
+                <label for="destino4">Montanhas</label>
+            </div>
+            <div class="inputs">
+                <label for="seu-texto">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label> 
+                <textarea name="seu-texto" id="seu-texto" cols="70" rows="10"></textarea>                
+            </div>
+            <div class="inputs">
+                <label for="data">Qual a melhor data para realizar sau viagem?</label>
+                <input type="date" name="data" id="data" required>     
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="promotions" id="promotions">
+                <label for="promotions">Gostaria de receber outras oportunidades oferecidas pela Trybe?</label>
+            </div>
+            <div class="inputs">
+                <input type="checkbox" name="direito-de-iamgens" id="direito-de-iamgens" required>
+                <label for="direito-de-iamgens">Concordo que imagens das minhas férias poderão ser usadas na divugação de concursos futuros?</label>
+            </div>
+            <div class="inputs">
+                <button type="submit" id="submit">Enviar</button>
+                <button id="limpar" type="reset">Limpar</button>
+            </div>
+
+        </fieldset>
+
+    </form>
+    <script src="script-forms.js"></script>
+    
+</body>
+</html>
