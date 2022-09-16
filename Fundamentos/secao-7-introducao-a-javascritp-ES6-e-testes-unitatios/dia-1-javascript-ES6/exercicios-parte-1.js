@@ -91,22 +91,39 @@
 
 // Exercice 4
 
-const substituaX = (nome) => {
-  const frase = `Tryber * aqui!`
-  let text = frase.replace('*', nome);
-  return text;
-}
+// const substituaX = (nome) => {
+//   const frase = `Tryber * aqui!`
+//   let text = frase.replace('*', nome);
+//   return text;
+// }
 
-const minhasSkills = (skills) => {
-  let result = `${substituaX('Túlio Tófani')}
+// const minhasSkills = (skills) => {
+//   let result = `${substituaX('Túlio Tófani')}
 
-Minhas três principais habilidades são:`
-  skills.forEach((skill) => {
-    result = `${result}
-    * ${skill}`
-  })
-  return result;
-}
+// Minhas três principais habilidades são:`
+//   skills.forEach((skill) => {
+//     result = `${result}
+//     * ${skill}`
+//   })
+//   return result;
+// }
 
-// console.log(substituaX('Tulio'));
-console.log(minhasSkills(['JavaScript', 'HTML', 'CSS']));
+// // console.log(substituaX('Tulio'));
+// console.log(minhasSkills(['JavaScript', 'HTML', 'CSS']));
+
+// Exercice academia de lógica
+
+// const equalsNumbers = (numbers) => {
+//   if (!Array.isArray(numbers) || numbers.length <= 1) {
+//     return `Parâmetro inválido.`
+//   }
+
+//   for (let index = 1; index < numbers.length; index += 1) {
+//     if (numbers[0] !== numbers[index]) {
+//       return false
+//     }
+//   }
+//   return true
+// }
+
+// console.log(equalsNumbers(1, 1, 1, 3))
