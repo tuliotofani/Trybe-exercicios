@@ -36,3 +36,14 @@ console.log(containsA(names));
 //  }
  
 //  console.log(containsA(names));
+
+
+
+const containsAs = (array) => {
+    let lettersAs = 0;
+    array.forEach((name) => name.split('')
+    .reduce((acc, curr) => (curr === 'a' || curr === 'A') ? lettersAs += 1 : acc, 0))
+    return lettersAs;
+}
+
+console.log(containsAs(names));
