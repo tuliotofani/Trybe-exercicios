@@ -1,2 +1,0 @@
-Cerveja;
-Refrigerante;
