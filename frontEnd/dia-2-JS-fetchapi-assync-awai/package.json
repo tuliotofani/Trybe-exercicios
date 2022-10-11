@@ -1,0 +1,15 @@
+{
+  "name": "dia-2-js-fetchapi-assync-awai",
+  "version": "1.0.0",
+  "description": "",
+  "main": "scrip-course.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.7"
+  }
+}
